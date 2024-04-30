@@ -20,7 +20,7 @@ module.exports.run = async function ({ api, event, args }) {
     if (!question) return api.sendMessage("Please provide a question first.", event.threadID, event.messageID);
 
     try {
-        api.sendMessage("Please bear with me while I ponder your request...", event.threadID, event.messageID);
+        api.sendMessage("Please bear  with me while I ponder your request...", event.threadID, event.messageID);
 
         const userInput = encodeURIComponent(question);
         const uid = event.senderID;
